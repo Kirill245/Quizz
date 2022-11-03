@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/start', function () {
     return view('start');
 });
+
+Route::get('start','QuestionController@showAll')->name('question'); 
